@@ -1,0 +1,52 @@
+/* Overall library styling */
+library {
+    display: block;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6e3;
+    padding: 20px;
+}
+
+/* Each book container */
+book {
+    display: block;
+    margin: 15px 0;
+    padding: 15px;
+    border: 2px solid #ff9800;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Labels before each field */
+id::before {
+    content: "ID: ";
+    color: #000;
+}
+
+title::before {
+    content: "Title: ";
+    color: #000;
+}
+
+author::before {
+    content: "Author: ";
+    color: #000;
+}
+
+published_year::before {
+    content: "Year: ";
+    color: #000;
+}
+
+available_copies::before {
+    content: "Copies: ";
+    color: #000;
+}
+
+/* Common styling for all elements */
+id, title, author, published_year, available_copies {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+    color: #e65100;
+}
